@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <h1 id="logo">WitFlix</h1>
+      <a href=""><h1 id="logo">WitFlix</h1></a>
       <nav class="nav">
         <a href="">Topic 1</a>
         <a href="">Topic 2</a>
@@ -21,9 +21,11 @@
       </nav>
       <div class="user-panel">
         <input class="search-bar" type="text" placeholder="Search" />
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href=""><i class="fa-solid fa-bell"></i></a>
-        <a href=""><img id="user-image" src="/media/profile.png" alt="" /></a>
+        <a href=""
+          ><img id="user-image" src="/media/profile.png" alt="User Profile"
+        /></a>
       </div>
     </header>
     <main class="hero">
@@ -36,16 +38,12 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-regular fa-star"></i>
-          </div> 
+          </div>
           <div class="imdb-rating">
-          <span style="font-weight: bold;"> 7.3 </span> IMDB
+            <span style="font-weight: bold">7.3</span> IMDB
           </div>
-          <div class="age-rating">
-          +16
-          </div>
-          <div class="movie-duration">
-          2 hr 21 min.
-          </div>
+          <div class="age-rating">+16</div>
+          <div class="movie-duration">2 hr 21 min</div>
         </div>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vero
@@ -53,36 +51,48 @@
           iste sapiente neque, distinctio eveniet, nesciunt ex minus sunt fuga
           culpa.
         </p>
-        <div>
-          <p><span>Starring:</span> lorem ipsum, lorem ipsum</p>
-          <p><span>Genre:</span> lorem ipsum, lorem ipsum</p>
-          <p><span>Tags:</span> lorem ipsum, lorem ipsum</p>
+        <div class="movie-tags-container">
+          <p>
+            <span class="red-bold">Starring:</span> lorem ipsum, lorem ipsum
+          </p>
+          <p><span class="red-bold">Genre:</span> lorem ipsum, lorem ipsum</p>
+          <p><span class="red-bold">Tags:</span> lorem ipsum, lorem ipsum</p>
         </div>
-        <button>Play Now</button>
+        <button class="btn-play-big">
+          <i class="fa-solid fa-play"></i> Play Now
+        </button>
       </div>
     </main>
     <section>
-      <div class="popular-movies">
-        <p class="category-heading">Popular Movies</p>
+      <div class="catalogue-container">
+        <div class="catalogue-heading-container">
+          <p class="catalogue-heading">Popular Movies</p>
+          <a href="">View All</a>
+        </div>
         <div class="movie-list">
           <div class="movie-card">
             <h2>Movie Name</h2>
             <div class="ratings">
-              <span class="content-rating">16+</span>
+              <span class="age-rating">16+</span>
               <span class="movie-duration">2 h 21 min</span>
             </div>
+            <button class="btn-play-small">
+              <i class="fa-solid fa-play"></i> Play Now
+            </button>
           </div>
+        </div>
       </div>
-      <div class="recommended-movies">
-        <p class="category-heading">Popular Movies</p>
+      <div class="catalogue-container">
+        <p class="catalogue-heading">Recommended Movies</p>
         <div class="movie-list">
           <div class="movie-card">
             <h2>Movie Name</h2>
             <div class="ratings">
-              <span class="content-rating">16+</span>
+              <span class="age-rating">16+</span>
               <span class="movie-duration">2 h 21 min</span>
             </div>
           </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -93,20 +103,25 @@
           <a href="">FAQ</a>
           <a href="">Watch List</a>
         </div>
-        <p class="footer-text"></p>
       </div>
       <div class="follow-us-container">
         <p class="footer-text">Follow Us</p>
-        <a href=""><img src="media/facebook.png" alt=""></a>        
-        <a href=""><img src="/media/twitter.png" alt=""></a>
-        <a href=""><img src="/media/youtube.png" alt=""></a>
-
-
+        <a href=""><img src="media/facebook.png" alt="Facebook" /></a>
+        <a href=""><img src="/media/twitter.png" alt="Twitter" /></a>
+        <a href=""><img src="/media/youtube.png" alt="YouTube" /></a>
       </div>
       <div class="apps-container">
         <p class="footer-text">Apps</p>
-        <a href=""><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt=""></a>        
-        <a href=""><img src="/media/GetItOnGooglePlay_Badge_Web_color_English.png" alt=""></a>
+        <a href=""
+          ><img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="Download on the App Store"
+        /></a>
+        <a href=""
+          ><img
+            src="/media/GetItOnGooglePlay_Badge_Web_color_English.png"
+            alt="Get it on Google Play"
+        /></a>
       </div>
     </footer>
   </body>
