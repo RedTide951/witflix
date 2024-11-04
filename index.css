@@ -51,6 +51,10 @@ a:hover {
 
 /* APP BAR SECTOION */
 
+#hamburger {
+  display: none;
+}
+
 #logo {
   display: flex;
   justify-content: center;
@@ -210,4 +214,100 @@ button i {
 
 .btn-play-small:hover {
   transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms-of-use-container {
+  max-width: 60vw;
+}
+
+.footer-linkbar {
+  display: flex;
+  gap: 1.2rem;
+  color: rgb(94, 94, 94);
+}
+
+.footer-icon {
+  max-block-size: 2rem;
+  margin: 0.2rem;
+}
+
+.terms-of-use-text {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  /* app BAr */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    background-color: #fff; /* Set a background color to avoid transparency issues */
+    padding: 0 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 0;
+  }
+
+  body {
+    margin-top: 60px;
+  }
+
+  #hamburger {
+    display: flex;
+    max-block-size: 2rem;
+    align-items: center;
+    border: none;
+    background: none;
+  }
+
+  #hamburger:hover {
+    transform: scale(1.05);
+  }
+
+  #hamburger-icon {
+    max-block-size: 2rem;
+  }
+
+  .nav,
+  #bell-icon,
+  #user-image,
+  #search-icon {
+    display: none;
+  }
+
+  .user-panel {
+    gap: 0;
+  }
+
+  .search-bar {
+    max-width: 100vw;
+    min-width: 20vw;
+  }
+  .movie-list {
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+
+  /* hero */
+
+  .ratings {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .user-rating {
+    display: flex;
+  }
+
+  /* catalogue section */
 }

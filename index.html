@@ -21,12 +21,17 @@
       </nav>
       <div class="user-panel">
         <input class="search-bar" type="text" placeholder="Search" />
-        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href=""><i class="fa-solid fa-bell"></i></a>
+        <a href=""
+          ><i class="fa-solid fa-magnifying-glass" id="search-icon"></i
+        ></a>
+        <a href=""><i id="bell-icon" class="fa-solid fa-bell"></i></a>
         <a href=""
           ><img id="user-image" src="/media/profile.png" alt="User Profile"
         /></a>
       </div>
+      <button class="hamburger-button" id="hamburger">
+        <img src="/media/more.png" id="hamburger-icon" alt="" />
+      </button>
     </header>
     <main class="hero">
       <div class="featured-movie">
@@ -113,7 +118,10 @@
         </div>
       </div>
       <div class="catalogue-container">
-        <p class="catalogue-heading">Recommended Movies</p>
+        <div class="catalogue-heading-container">
+          <p class="catalogue-heading">Recommended Movies</p>
+          <a href="">View All</a>
+        </div>
         <div class="movie-list">
           <div class="movie-card">
             <h2>Movie Name</h2>
@@ -121,34 +129,85 @@
               <span class="age-rating">16+</span>
               <span class="movie-duration">2 h 21 min</span>
             </div>
+            <button class="btn-play-small">
+              <i class="fa-solid fa-play"></i> Play Now
+            </button>
+          </div>
+          <div class="movie-card">
+            <h2>Movie Name</h2>
+            <div class="ratings">
+              <span class="age-rating">16+</span>
+              <span class="movie-duration">2 h 21 min</span>
+            </div>
+            <button class="btn-play-small">
+              <i class="fa-solid fa-play"></i> Play Now
+            </button>
+          </div>
+          <div class="movie-card">
+            <h2>Movie Name</h2>
+            <div class="ratings">
+              <span class="age-rating">16+</span>
+              <span class="movie-duration">2 h 21 min</span>
+            </div>
+            <button class="btn-play-small">
+              <i class="fa-solid fa-play"></i> Play Now
+            </button>
+          </div>
+          <div class="movie-card">
+            <h2>Movie Name</h2>
+            <div class="ratings">
+              <span class="age-rating">16+</span>
+              <span class="movie-duration">2 h 21 min</span>
+            </div>
+            <button class="btn-play-small">
+              <i class="fa-solid fa-play"></i> Play Now
+            </button>
           </div>
         </div>
       </div>
     </section>
     <footer>
       <div class="terms-of-use-container">
-        <div class="terms-of-use-linkbar">
+        <div class="footer-linkbar">
           <a href="">Terms of Use</a>
           <a href="">Privacy Policy</a>
           <a href="">FAQ</a>
           <a href="">Watch List</a>
         </div>
+        <p class="terms-of-use-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          nostrum itaque, architecto obcaecati explicabo ipsam eaque qui eum!
+          Reiciendis cumque blanditiis autem tempore. Accusamus, neque magnam
+          eaque ducimus quos nostrum.
+        </p>
       </div>
       <div class="follow-us-container">
-        <p class="footer-text">Follow Us</p>
-        <a href=""><img src="media/facebook.png" alt="Facebook" /></a>
-        <a href=""><img src="/media/twitter.png" alt="Twitter" /></a>
-        <a href=""><img src="/media/youtube.png" alt="YouTube" /></a>
+        <div class="footer-linkbar">
+          <p style="margin: 0; color: black">Follow Us</p>
+        </div>
+        <a href=""
+          ><img class="footer-icon" src="media/facebook.png" alt="Facebook"
+        /></a>
+        <a href=""
+          ><img class="footer-icon" src="/media/twitter.png" alt="Twitter"
+        /></a>
+        <a href=""
+          ><img class="footer-icon" src="/media/youtube.png" alt="YouTube"
+        /></a>
       </div>
       <div class="apps-container">
-        <p class="footer-text">Apps</p>
+        <div class="footer-linkbar">
+          <p style="margin: 0; color: black">Apps</p>
+        </div>
         <a href=""
           ><img
+            class="footer-icon"
             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
             alt="Download on the App Store"
         /></a>
         <a href=""
           ><img
+            class="footer-icon"
             src="/media/GetItOnGooglePlay_Badge_Web_color_English.png"
             alt="Get it on Google Play"
         /></a>
