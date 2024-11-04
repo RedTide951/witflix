@@ -4,6 +4,10 @@
   --primary-color: rgb(226, 0, 0);
 }
 
+* {
+  transition: transform 0.3s ease;
+}
+
 body {
   padding: 1rem;
   margin: 0;
@@ -55,7 +59,6 @@ a:hover {
   margin: 0;
   font-family: poppins;
   color: rgb(226, 0, 0);
-  transition: transform 0.3s ease;
 }
 
 .nav {
@@ -77,6 +80,10 @@ a:hover {
 .search-bar {
   gap: 0.5rem;
   min-height: 1.5em;
+}
+
+.search-bar:hover {
+  transform: scale(1.05);
 }
 
 .fa-bell {
@@ -102,6 +109,10 @@ a:hover {
   padding: 1rem;
   border: black solid 1px;
   border-radius: 3px;
+}
+
+.hero:hover {
+  transform: scale(1.005);
 }
 
 #hero-heading {
@@ -139,7 +150,7 @@ a:hover {
 }
 
 .btn-play-big:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 button i {
@@ -167,7 +178,7 @@ button i {
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0.2rem;
 }
 
 .movie-card {
@@ -176,6 +187,10 @@ button i {
   padding: 3rem 13rem 3rem 2rem;
   border-radius: 3px;
   gap: 0.3rem;
+}
+
+.movie-card:hover {
+  transform: scale(1.01);
 }
 
 .btn-play-small {
@@ -194,5 +209,5 @@ button i {
 }
 
 .btn-play-small:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
