@@ -293,11 +293,6 @@ footer {
     max-width: 100vw;
     min-width: 20vw;
   }
-  .movie-list {
-    overflow-x: hidden;
-    white-space: nowrap;
-  }
-
   /* hero */
 
   .ratings {
@@ -310,4 +305,63 @@ footer {
   }
 
   /* catalogue section */
+
+  .movie-card {
+    display: inline-block;
+    border: black solid 1px;
+    padding: 2rem 6rem 2rem 2rem;
+    border-radius: 3px;
+    gap: 0.3rem;
+  }
+
+  /* footer */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-linkbar {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-linkbar a {
+    color: rgb(70, 70, 70);
+    font-size: 0.9rem;
+  }
+
+  .footer-linkbar a:hover {
+    transform: scale(1.05);
+  }
+
+  .terms-of-use-container {
+    max-width: 50vw;
+  }
+
+  .terms-of-use-text {
+    display: none;
+  }
+
+  .follow-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .follow-us-container p {
+    display: none;
+  }
+
+  .apps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .apps-container p {
+    display: none;
+  }
 }
