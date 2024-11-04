@@ -10,6 +10,12 @@ header {
   align-items: center;
 }
 
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -57,4 +63,35 @@ a {
 #user-image {
   width: 2rem;
   height: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 1rem;
+  border: black solid 1px;
+  border-radius: 3px;
+}
+
+#hero-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.ratings {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.user-rating {
+  color: rgb(226, 0, 0);
+}
+
+.age-rating {
+  padding: 0 0.2em;
+  border: black solid 1px;
+  border-radius: 5px;
 }
