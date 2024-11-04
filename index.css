@@ -1,0 +1,60 @@
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: poppins;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: poppins;
+  color: rgb(226, 0, 0);
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  gap: 0.5rem;
+  min-height: 1.5em;
+}
+
+.fa-bell {
+  font-size: 1.5rem;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.5rem;
+}
+
+#user-image {
+  width: 2rem;
+  height: 2rem;
+}
