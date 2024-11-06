@@ -17,6 +17,32 @@
   transition: transform 0.3s ease;
 }
 
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #525252;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #707070;
+}
+
+
+
+
+
 body {
   padding: 0;
   margin: 0;
@@ -189,21 +215,22 @@ nav a {
   filter: opacity(0.8);
   z-index: -1;
   pointer-events: none;
+  aspect-ratio: 2.35/1;
 }
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  aspect-ratio: 2.35/1;
   padding: 2rem;
-  border: black solid 1px;
-  border-radius: 3px;
+  margin-top: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 .hero:hover {
-  transform: scale(1.005);
+  /* transform: scale(1.005); */
 }
 
 #hero-heading {
@@ -249,33 +276,28 @@ button i {
   margin-right: 0.5rem;
 }
 
+/* SECTION 1 */
+
+#section1 {
+  margin-top: -5rem;
+}
+
 /* catalogue section */
 
-.arrow {
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-  z-index: 10;
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
+#section-gradient-top {
+  background: rgb(20,20,20);
+  background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,1) 50%, rgba(255,255,255,0) 100%);
+  height: 3rem;
+  z-index: 1;
 }
 
 .catalogue-heading-container {
   display: flex;
   justify-content: space-between;
+  background-color: var(--bg-color2);
   align-items: center;
-  margin: 0 1rem;
+  margin: 0;
+  padding: 0 2rem;
 }
 
 .catalogue-heading {
@@ -324,6 +346,27 @@ button i {
   transform: scale(1.05);
 }
 
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+
 /*
 /* Footer */
 
@@ -366,7 +409,7 @@ footer {
     align-items: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
     background-color: #fff;
     padding: 0 0.3rem;
