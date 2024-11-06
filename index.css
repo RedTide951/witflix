@@ -1,7 +1,12 @@
 /* General CSS */
 
+
 :root {
-  --primary-color: rgb(226, 0, 0);
+  --primary-color: #E50914;
+  --bg-color: #0E0E0E;
+  --bg-color2: #141414;
+  --text-color: #D9D6D9;
+  --gradient-bg: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 40%, rgba(0,212,255,0) 100%)
 }
 
 * {
@@ -9,15 +14,28 @@
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
   font-family: poppins;
+  background-color: var(--bg-color2);
+  color: var(--text-color);
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgb(14,14,14);
+  background: linear-gradient(180deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 60%, rgba(0,212,255,0) 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.3rem;
+  z-index: 1000; /* Ensure the header stays on top of other content */
+}
+
+header:hover {
 }
 
 h1,
@@ -37,7 +55,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--text-color);
   transition: transform 0.3s ease;
 }
 
@@ -47,7 +65,7 @@ a:hover {
 
 .red-bold {
   font-weight: bold;
-  color: rgb(226, 0, 0);
+  color: var(--primary-color)
 }
 
 /* APP BAR SECTOION */
@@ -92,11 +110,12 @@ a:hover {
 #logo {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 0;
+  margin: 0 1rem;
+  padding: 0;
   font-family: poppins;
-  color: rgb(226, 0, 0);
+  color: var(--primary-color);
 }
 
 .nav {
@@ -108,11 +127,17 @@ a:hover {
   gap: 1rem;
 }
 
+nav a {
+  color: white;
+  font-size: 0.8rem;
+}
+
 .user-panel {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+  margin-right: 1rem;
 }
 
 .search-component {
@@ -143,22 +168,34 @@ a:hover {
 #user-image {
   width: 2rem;
   height: 2rem;
+  color: white;
 }
 
 /* Hero section */
+
+#main-trailer {
+position: absolute;
+width: 100%;
+height: 100%;
+filter: opacity(0.80);
+z-index: -1;
+pointer-events: none;
+}
 
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
-  padding: 1rem;
+  padding: 2rem;
   border: black solid 1px;
   border-radius: 3px;
+  position: relative;
 }
 
 .hero:hover {
   transform: scale(1.005);
+  
 }
 
 #hero-heading {
