@@ -13,3 +13,6 @@ function toggleSearch() {
     searchBar.style.opacity = "1";
   }
 }
+
+
+// Movie List 

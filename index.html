@@ -21,10 +21,10 @@
     <header>
       <a href=""><h1 id="logo">WitFlix</h1></a>
       <nav class="nav">
-        <a href="">Topic 1</a>
-        <a href="">Topic 2</a>
-        <a href="">Topic 3</a>
-        <a href="">Topic 4</a>
+        <a class="underline-animation" href="">Topic 1</a>
+        <a class="underline-animation" href="">Topic 2</a>
+        <a class="underline-animation" href="">Topic 3</a>
+        <a class="underline-animation" href="">Topic 4</a>
       </nav>
       <div class="user-panel">
         <div class="search-component">
@@ -97,7 +97,7 @@
         id="main-trailer"
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/pFjcmySE_lk?si=4vXZ4BCQ1LYFzLYn&autoplay=1&mute=1&controls=0&loop=1&loop=1&iv_load_policy=0&cc_load_policy=0&rel=0"
+        src="https://www.youtube.com/embed/pFjcmySE_lk?si=4vXZ4BCQ1LYFzLYn&autoplay=1&mute=1&controls=0&loop=1&iv_load_policy=0&cc_load_policy=0&rel=0"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -110,55 +110,32 @@
       <div class="catalogue-container">
         <div class="catalogue-heading-container">
           <p class="catalogue-heading">Popular Movies</p>
-          <a href="">View All</a>
+          <a class="underline-animation" href="">View All</a>
         </div>
         <div class="movie-list">
           <div class="movie-card">
-            <h2>Movie Name</h2>
-            <div class="ratings">
-              <span class="age-rating">16+</span>
-              <span class="movie-duration">2 h 21 min</span>
+            <div class="movie-card-content">
+              <h2>Movie Name</h2>
+              <div class="ratings">
+                <span class="age-rating">16+</span>
+                <span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button class="btn-play-small">
+                <i class="fa-solid fa-play"></i> Play Now
+              </button>
             </div>
-            <button class="btn-play-small">
-              <i class="fa-solid fa-play"></i> Play Now
-            </button>
-          </div>
-          <div class="movie-card">
-            <h2>Movie Name</h2>
-            <div class="ratings">
-              <span class="age-rating">16+</span>
-              <span class="movie-duration">2 h 21 min</span>
-            </div>
-            <button class="btn-play-small">
-              <i class="fa-solid fa-play"></i> Play Now
-            </button>
-          </div>
-          <div class="movie-card">
-            <h2>Movie Name</h2>
-            <div class="ratings">
-              <span class="age-rating">16+</span>
-              <span class="movie-duration">2 h 21 min</span>
-            </div>
-            <button class="btn-play-small">
-              <i class="fa-solid fa-play"></i> Play Now
-            </button>
-          </div>
-          <div class="movie-card">
-            <h2>Movie Name</h2>
-            <div class="ratings">
-              <span class="age-rating">16+</span>
-              <span class="movie-duration">2 h 21 min</span>
-            </div>
-            <button class="btn-play-small">
-              <i class="fa-solid fa-play"></i> Play Now
-            </button>
+            <img
+              class="movie-card-image"
+              src="https://plus.unsplash.com/premium_photo-1729068649616-48b0254eed5d?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div class="catalogue-container">
         <div class="catalogue-heading-container">
           <p class="catalogue-heading">Recommended Movies</p>
-          <a href="">View All</a>
+          <a class="underline-animation" href="">View All</a>
         </div>
         <!-- <div class="arrow left-arrow" onclick="scrollLeft()">←</div> -->
         <div class="movie-list">
@@ -209,10 +186,10 @@
     <footer>
       <div class="terms-of-use-container">
         <div class="footer-linkbar">
-          <a href="">Terms of Use</a>
-          <a href="">Privacy Policy</a>
-          <a href="">FAQ</a>
-          <a href="">Watch List</a>
+          <a class="underline-animation" href="">Terms of Use</a>
+          <a class="underline-animation" href="">Privacy Policy</a>
+          <a class="underline-animation" href="">FAQ</a>
+          <a class="underline-animation" href="">Watch List</a>
         </div>
         <p class="terms-of-use-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
@@ -225,15 +202,9 @@
         <div class="footer-linkbar">
           <p style="margin: 0; color: #f0f0f0">Follow Us</p>
         </div>
-        <a href=""
-          ><img class="footer-icon" src="media/facebook.png" alt="Facebook"
-        /></a>
-        <a href=""
-          ><img class="footer-icon" src="/media/twitter.png" alt="Twitter"
-        /></a>
-        <a href=""
-          ><img class="footer-icon" src="/media/youtube.png" alt="YouTube"
-        /></a>
+        <a href=""><i class="fa-brands fa-facebook-f footer-icon"></i></a>
+        <a href=""><i class="fa-brands fa-twitter footer-icon"></i></a>
+        <a href=""><i class="fa-brands fa-youtube footer-icon"></i></a>
       </div>
       <div class="apps-container">
         <div class="footer-linkbar">
