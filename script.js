@@ -6,12 +6,12 @@ function toggleMenu() {
 function toggleSearch() {
   const searchBar = document.querySelector(".search-bar");
   const searchButton = document.querySelector(".compact-search-button");
-  if (searchBar.style.width === "150px") {
+  if (searchBar.style.width === "200px") {
     searchBar.style.width = "0";
     searchBar.style.opacity = "0";
     searchButton.style.fontSize = "1.5rem";
   } else {
-    searchBar.style.width = "150px";
+    searchBar.style.width = "200px";
     searchBar.style.opacity = "0.8";
     searchButton.style.fontSize = "1.2rem";
   }

@@ -127,10 +127,6 @@ a:hover {
 
 /* APP BAR SECTOION */
 
-.compact-search-button {
-  display: none;
-}
-
 #hamburger {
   display: none;
 }
@@ -202,16 +198,27 @@ nav a {
   text-align: center;
 }
 
-#search-icon {
-  font-size: 1.3rem;
-  margin-left: -1.6rem;
+.compact-search-button {
+  display: block;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1.5rem;
+  z-index: 5;
+  margin-left: -1rem;
 }
 
 .search-bar {
   display: block;
-  gap: 0.5rem;
-  min-height: 1.5em;
+  width: 0;
   padding: 0.2rem;
+  background: none;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--bg-color2);
+  font-size: 1rem;
+  transition: width 0.4s ease, opacity 0.4s ease;
 }
 
 .search-component:hover {
@@ -470,12 +477,6 @@ footer {
   font-size: 0.8rem;
 }
 
-@media (max-width: 840px) {
-  .search-bar {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   /* app BAr */
 
@@ -513,22 +514,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .compact-search-bar {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .compact-search-button {
-    display: block;
-    align-items: center;
-    border: none;
-    background: none;
-    padding: 0;
-    font-size: 1.5rem;
-    z-index: 5;
-    margin-left: -1rem;
-  }
-
   .compact-search-bar button:hover {
     transform: scale(1.05);
   }
@@ -552,8 +537,7 @@ footer {
 
   .nav,
   #bell-icon,
-  #user-image,
-  #search-icon {
+  #user-image {
     display: none;
   }
 
