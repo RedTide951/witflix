@@ -1,3 +1,4 @@
 - mobile responsive
 - improve Searchbar/ Add toggle
 - Hover itekleme sorunu
+
