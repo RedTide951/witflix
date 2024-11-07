@@ -34,20 +34,22 @@
             type="text"
             placeholder="Search"
           />
-          <a href="" id="search-icon"
-            ><i class="fa-solid fa-magnifying-glass"></i
-          ></a>
+          <button
+            class="compact-search-button"
+            style="color: #d9d6d9"
+            onclick="toggleSearch()"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
         <a href=""><i id="bell-icon" class="fa-solid fa-bell"></i></a>
         <a href=""
           ><img id="user-image" src="/media/profile.png" alt="User Profile"
         /></a>
       </div>
-      <button class="compact-search-button" onclick="toggleSearch()">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
+
       <button class="hamburger-button" id="hamburger" onclick="toggleMenu()">
-        <img src="/media/more.png" id="hamburger-icon" alt="" />
+        <i class="fa-solid fa-bars" style="color: #d9d6d9"></i>
       </button>
       <div class="hamburger-menu" id="hamburger-menu">
         <ul>
@@ -333,10 +335,10 @@
     <footer>
       <div class="terms-of-use-container">
         <div class="footer-linkbar">
-          <a class="underline-animation" href="">Terms of Use</a>
-          <a class="underline-animation" href="">Privacy Policy</a>
-          <a class="underline-animation" href="">FAQ</a>
-          <a class="underline-animation" href="">Watch List</a>
+          <a href="">Terms of Use</a>
+          <a href="">Privacy Policy</a>
+          <a href="">FAQ</a>
+          <a href="">Watch List</a>
         </div>
         <p class="terms-of-use-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates

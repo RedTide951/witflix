@@ -52,7 +52,12 @@ header {
   justify-content: space-between;
   align-items: center;
   background: rgb(14, 14, 14);
-  background: linear-gradient(180deg, rgb(14, 14, 14) 0%, rgb(14, 14, 14) 60%, rgba(0, 212, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(14, 14, 14) 0%,
+    rgb(14, 14, 14) 60%,
+    rgba(0, 212, 255, 0) 100%
+  );
   position: fixed;
   top: 0;
   left: 0;
@@ -86,12 +91,16 @@ a:hover {
   transform: scale(1.1);
 }
 
-.underline-animation, .footer-icon, .btn-play-small {
+.underline-animation,
+.footer-icon,
+.btn-play-small {
   position: relative;
   text-decoration: none;
 }
 
-.underline-animation::after, .footer-icon::after, .btn-play-small::after {
+.underline-animation::after,
+.footer-icon::after,
+.btn-play-small::after {
   content: "";
   position: absolute;
   left: 0;
@@ -105,7 +114,9 @@ a:hover {
   z-index: 5;
 }
 
-.underline-animation:hover::after, .footer-icon:hover::after, .btn-play-small:hover::after {
+.underline-animation:hover::after,
+.footer-icon:hover::after,
+.btn-play-small:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
   z-index: 5;
@@ -117,9 +128,6 @@ a:hover {
 }
 
 /* APP BAR SECTOION */
-.compact-search-button {
-  display: none;
-}
 
 #hamburger {
   display: none;
@@ -183,8 +191,7 @@ nav a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 1rem;
-  margin-right: 1rem;
+  gap: 0.5rem;
 }
 
 .search-component {
@@ -192,16 +199,14 @@ nav a {
   text-align: center;
 }
 
-#search-icon {
-  font-size: 1.3rem;
-  margin-left: -1.6rem;
-}
-
 .search-bar {
   display: block;
   gap: 0.5rem;
   min-height: 1.5em;
   padding: 0.2rem;
+  background: #333;
+  border-radius: 0.5rem;
+  border: 0;
 }
 
 .search-component:hover {
@@ -298,7 +303,12 @@ button i {
 /* catalogue section */
 #section-gradient-top {
   background: rgb(20, 20, 20);
-  background: linear-gradient(0deg, rgb(20, 20, 20) 0%, rgb(20, 20, 20) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(20, 20, 20) 0%,
+    rgb(20, 20, 20) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
   height: 3rem;
   z-index: 1;
 }
@@ -351,7 +361,7 @@ button i {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -450,11 +460,6 @@ footer {
   font-size: 0.8rem;
 }
 
-@media (max-width: 840px) {
-  .search-bar {
-    display: none;
-  }
-}
 @media (max-width: 768px) {
   /* app BAr */
   header {
@@ -464,13 +469,16 @@ footer {
     left: 0;
     width: 100%;
     z-index: 2;
-    background-color: #fff;
+    background: var(--bg-color);
     padding: 0 0.3rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     gap: 0;
   }
   #logo {
     margin-right: auto;
+    margin: 0.2rem;
+    margin-left: 0.5rem;
+    align-items: center;
   }
   body {
     margin-top: 60px;
@@ -484,13 +492,14 @@ footer {
     opacity: 0;
     transition: width 0.4s ease, opacity 0.4s ease;
     margin-left: auto;
-    font-size: 1.2rem;
+    color: var(--text-color);
   }
   .compact-search-bar {
     display: flex;
     align-items: flex-end;
   }
   .compact-search-button {
+    transition: font-size 0.4s ease;
     display: block;
     align-items: center;
     border: none;
@@ -498,25 +507,24 @@ footer {
     padding: 0;
     font-size: 1.5rem;
     z-index: 5;
-    margin-left: -1rem;
+    margin-left: -0.8rem;
+    margin-top: 0.1rem;
   }
   .compact-search-bar button:hover {
     transform: scale(1.05);
   }
   #hamburger {
-    display: flex;
-    max-block-size: 2rem;
+    display: block;
     align-items: center;
     border: none;
     background: none;
-    margin: 0 2rem 0 0;
+    margin: 0 1rem 0 1.5rem;
+    font-size: 1.5rem;
   }
   #hamburger:hover {
     transform: scale(1.05);
   }
-  #hamburger-icon {
-    max-block-size: 2rem;
-  }
+
   .nav,
   #bell-icon,
   #user-image,
@@ -574,4 +582,4 @@ footer {
   .apps-container p {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
