@@ -10,7 +10,7 @@ function toggleSearch() {
     searchBar.style.width = "0";
     searchBar.style.minWidth = "0";
     searchBar.style.opacity = "0";
-    searchButton.style.fontSize = "1.5rem";
+    searchButton.style.fontSize = "1.2rem";
   } else {
     searchBar.style.width = "20vw";
     searchBar.style.minWidth = "150px";

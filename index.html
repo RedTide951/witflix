@@ -38,15 +38,15 @@
             <i class="fa-solid fa-magnifying-glass" style="color: #d9d6d9"></i>
           </button>
         </div>
-        <a href="#"><i id="bell-icon" class="fa-solid fa-bell"></i></a>
-        <a href="#"
-          ><i class="fa-solid fa-user user-image" style="color: #d9d6d9"></i
+        <a href="#" id="bell-icon"><i class="fa-solid fa-bell"></i></a>
+        <a href="#" id="user-image"
+          ><i class="user-image fa-solid fa-user"></i
         ></a>
+        <button class="hamburger-button" id="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars" style="color: #d9d6d9"></i>
+        </button>
       </div>
 
-      <button class="hamburger-button" id="hamburger" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars" style="color: #d9d6d9"></i>
-      </button>
       <div class="hamburger-menu" id="hamburger-menu">
         <ul>
           <li><a href="">Profile</a></li>
@@ -74,18 +74,22 @@
           <div class="age-rating">+16</div>
           <div class="movie-duration">2 hr 21 min</div>
         </div>
-        <p>
+        <p class="featured-movie-text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vero
           ullam incidunt, repellat laudantium vitae facere odit tempore esse
           iste sapiente neque, distinctio eveniet, nesciunt ex minus sunt fuga
           culpa.
         </p>
         <div class="movie-tags-container">
-          <p>
+          <p class="starring-text">
             <span class="red-bold">Starring:</span> lorem ipsum, lorem ipsum
           </p>
-          <p><span class="red-bold">Genre:</span> lorem ipsum, lorem ipsum</p>
-          <p><span class="red-bold">Tags:</span> lorem ipsum, lorem ipsum</p>
+          <p class="genre-text">
+            <span class="red-bold">Genre:</span> lorem ipsum, lorem ipsum
+          </p>
+          <p class="tags-text">
+            <span class="red-bold">Tags:</span> lorem ipsum, lorem ipsum
+          </p>
         </div>
         <button class="btn-play-big">
           <i class="fa-solid fa-play"></i> Play Now
