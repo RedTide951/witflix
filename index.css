@@ -579,12 +579,13 @@ footer {
   }
   /* footer */
   footer {
+    margin: 1rem;
     display: flex;
     justify-content: space-between;
   }
   .footer-linkbar {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.1rem;
     justify-content: center;
     flex-direction: column;
   }
@@ -603,8 +604,8 @@ footer {
   }
   .follow-us-container {
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    flex-direction: row;
+    gap: 2px;
   }
   .follow-us-container p {
     display: none;
@@ -612,7 +613,7 @@ footer {
   .apps-container {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
   }
   .apps-container p {
     display: none;
